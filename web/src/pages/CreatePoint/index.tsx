@@ -141,7 +141,6 @@ const CreatePoint: React.FC = () => {
       history.push("/");
     } catch {
       alert("Error! Tente novamente");
-      history.push("/");
     }
   };
 

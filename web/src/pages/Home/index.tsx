@@ -1,4 +1,5 @@
 import React from "react";
+import PeopleImage from "../../assets/home-background.svg";
 import logo from "../../assets/logo.svg";
 import { FiLogIn } from "react-icons/fi";
 
@@ -14,17 +15,23 @@ const Home: React.FC = () => {
         </header>
 
         <main>
-          <h1>Seu marketplace de coleta de resíduos.</h1>
-          <p>
-            Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.
-          </p>
+          <div className="description">
+            <div>
+              <h1>Seu marketplace de coleta de resíduos.</h1>
+              <p>
+                Ajudamos pessoas a encontrarem pontos de coleta de forma
+                eficiente.
+              </p>
+              <Link to="/create-point">
+                <span>
+                  <FiLogIn />
+                </span>
+                <strong>Cadastre um ponto de coleta</strong>
+              </Link>
+            </div>
 
-          <Link to="/create-point">
-            <span>
-              <FiLogIn />
-            </span>
-            <strong>Cadastre um ponto de coleta</strong>
-          </Link>
+            <img src={PeopleImage} alt="people" />
+          </div>
         </main>
       </div>
     </div>

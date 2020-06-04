@@ -1,7 +1,5 @@
 #page-home {
   height: 100vh;
-
-  background: url("../../assets/home-background.svg") no-repeat 700px bottom;
 }
 
 #page-home .content {
@@ -17,7 +15,7 @@
 }
 
 #page-home .content header {
-  margin: 48px 0 0;
+  margin: 48px 0;
 }
 
 #page-home .content main {
@@ -27,6 +25,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#page-home .content .description {
+  display: flex;
+  flex-direction: row;
 }
 
 #page-home .content main h1 {
@@ -52,7 +55,7 @@
   align-items: center;
   overflow: hidden;
 
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #page-home .content main a span {
