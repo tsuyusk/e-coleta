@@ -1,0 +1,20 @@
+Perguntas para se fazer antes de escolher uma tecnologia
+
+	-> Que tipo de profissional o mercado está buscando
+	-> Quais empresas estão usando a tecnologia
+	-> Como é o ecossistema e as ferramentas ao redor da tecnologia
+	-> Qual o tamanho da imunidade da tecnologia
+	-> Quem está por trás do desenvolvimento da tecnologia
+	-> Essa tecnologia faz sentido pro seu momento na carreira ?
+	-> Quantas oportunidades existem para essa tecnologia
+	-> Quanto posso reutilizar essa tecnologia em outras ferramentas ?
+	-> Quais problemas essa tecnologia resolve ? 
+	-> Aonde eu quero chegar com essa tecnologia ?
+	-> É possivel compartilhar as mesmas ferramentas e bases de codigo entre vários times ?
+	-> Disponibilidade e facilidade de ter mais profissionais
+
+// Escolhidas no projeto:
+	-> JS
+		-> NodeJS e React
+	
+

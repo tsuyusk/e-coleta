@@ -1,0 +1,71 @@
+
+/***
+ * Get : Buscar uma ou mais informações do backend
+ * Post : Criar uma nova informação no backend
+ * Put :  Atualizar uma nova informação existente no backend
+ * Delete : Deletar uma informação o backend
+ */
+
+/**
+ * Get https://localhost:3333/users : Busca usuario
+ * Get https://localhost:3333/users/5 : Busca usuario id 5
+ * Post https://localhost:3333/users : Cria usuário
+ * Put https://localhost:3333/users  : Atualiza usuário
+ * Delete https://localhost:3333/users  : deleta usuário
+ */
+
+/**
+ * Request params => Parametros dentro de uma rota que identifica um recurso, e são obrigatórios.
+ * Query params => Parametros de uma rota, gerlamente opicionais, normalmente usados para filtrar e paginar.
+ * Request body => Parametros para criação e atualização de informações
+ */
+
+/**   KNEX.js
+ *  SELECT * FROM USERS => knex("users").where("name", "tsuy").where("*")
+ *   Beneficios => Usar apenas Javascript, e adaptação para QUALQUER banco de dados
+ */
+
+
+app.get("/users/:id", (req, res) => {
+  const id = Number(req.params.id);
+
+  const user = userNames.names[id];
+
+  return res.json(user);
+});
+
+app.post("/users", (req, res) => {
+  const { name, email } = req.body;
+  const user = {
+    name,
+    email,
+  };
+
+  return res.json(user);
+});
+
+
+Entidades (tabelas)
+
+  Points (Pontos de coletas)
+    image
+    name
+    email
+    whatsapp
+    latitude
+    longitude
+    city
+    uf
+  Items (Items para coleta)
+    Title
+    Image
+   point_items (Relacionamento dos items que um ponto coleta)
+    > point_id
+    > item_id
+  Muitos para Muitos (N-N)
+
+Funcionalidades
+  Cadastro de coleta
+  Listagem de items de coleta
+  Listar pontos (Filtro por estado, cidade e items)
+  Listar um único ponto de coleta
